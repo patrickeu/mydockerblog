@@ -30,6 +30,7 @@ export function Blog() {
         onChange={(value) => setAuthor(value)}
       />
       <br />
+      <br />
       <PostSorting
         fields={['createdAt', 'updatedAt']}
         value={sortBy}
