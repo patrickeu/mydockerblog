@@ -15,7 +15,7 @@ export function postsRoutes(app) {
     try {
       if (author && tag) {
         return res.status(400).json({
-          error: 'query by either author or tag, not both',
+          error: 'query by either author or tag, NOT both',
         })
       } else if (author) {
         return res.json(await listPostsByAuthor(author, options))
